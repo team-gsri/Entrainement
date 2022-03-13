@@ -1,3 +1,173 @@
-class cfgfunctions {
-  #include "functions.hpp"
+class Cfgfunctions {
+  class tyypalFunctions {
+    tag = "tyypal";
+    class cies {
+      file = "script";
+      class cqb_1 {};
+      class cqb_2 {};
+      class agrougrou {};
+    };
+  };
+  class GSRI {
+		class CCOM_Identification {
+			class CCOM_initIdentification {};
+			class CCOM_identification_flipPath {};
+			class CCOM_identification_flipGroup {};
+			class CCOM_identification_isGroupHidden {};
+			class CCOM_identification_isClassHidden {};
+		};
+		class CCOM_AT {
+			class CCOM_initAT {postInit = 1};
+			class CCOM_updateLaneAT {};
+		};
+		class CCOM_PO {
+			class CCOM_initPO {};
+		};
+	};
+};
+
+class CCOM_Identification {
+	class CCOM_Terrestre {
+		displayName = "Véhicules terrestres";
+		class CCOM_Blindes {
+			displayName = "Blindés";
+			class CCOM_AA {
+				displayName = "AA";
+				vehicleData[] = {{"O_T_APC_Tracked_02_AA_ghex_F", {14783,16861.2,0}},{"O_APC_Tracked_02_AA_F", {14791.5,16852.7,0}}};
+			};
+			class CCOM_APC {
+				displayName = "APC";
+				vehicleData[] = {
+					{"O_APC_Tracked_02_cannon_F",{14771.7,16849.9,0}},
+					{"O_T_APC_Tracked_02_cannon_ghex_F",{14780.2,16841.4,0}},
+					{"O_APC_Wheeled_02_rcws_v2_F",{14760.4,16838.6,0}},
+					{"O_T_APC_Wheeled_02_rcws_v2_ghex_F",{14768.9,16830.1,0}}
+				};
+			};
+			class CCOM_Artillerie {
+				displayName = "Artillerie";
+				vehicleData[] = {
+					{"O_MBT_02_arty_F",{14749.1,16827.3,0}},
+					{"O_T_MBT_02_arty_ghex_F",{14757.6,16818.8,0}}
+				};
+			};
+			class CCOM_MBT {
+				displayName = "MBT";
+				vehicleData[] = {
+					{"O_MBT_02_cannon_F",{14737.8,16816,0}},
+					{"O_T_MBT_02_cannon_ghex_F",{14746.3,16807.5,0}},
+					{"O_MBT_04_cannon_F",{14726.5,16804.7,0}},
+					{"O_MBT_04_command_F",{14734.9,16796.2,0}},
+					{"O_T_MBT_04_command_F",{14743.4,16787.7,0}}
+				};
+			};
+		};
+		class CCOM_Utilitaires {
+			displayName = "Utilitaires";
+			class CCOM_VL {
+				displayName = "VL";
+				vehicleData[] = {
+					{"O_Quadbike_01_F",{14692,16770.2,0}},
+					{"O_MRAP_02_F",{14715.1,16793.3,0}},
+					{"O_MRAP_02_hmg_F",{14723.6,16784.9,0}},
+					{"O_MRAP_02_gmg_F",{14732.1,16776.4,0}},
+					{"O_T_MRAP_02_ghex_F",{14740.6,16767.9,0}},
+					{"O_LSV_02_unarmed_F",{14703.8,16782,0}},
+					{"O_LSV_02_armed_F",{14712.3,16773.5,0}},
+					{"O_LSV_02_AT_F",{14720.8,16765.1,0}},
+					{"O_T_LSV_02_unarmed_F",{14729.3,16756.6,0}}
+				};
+			};
+			class CCOM_PL {
+				displayName = "PL";
+				vehicleData[] = {
+					{"O_Truck_03_transport_F",{14680.7,16758.9,0}},
+					{"O_Truck_03_covered_F",{14689.2,16750.4,0}},
+					{"O_Truck_03_ammo_F",{14697.7,16741.9,0}},
+					{"O_Truck_03_fuel_F",{14706.2,16733.5,0}},
+					{"O_Truck_03_medical_F",{14714.6,16725,0}},
+					{"O_Truck_03_repair_F",{14723.1,16716.5,0}},
+					{"O_Truck_03_device_F",{14731.6,16708,0}},
+					{"O_T_Truck_03_transport_ghex_F",{14740.1,16699.5,0}},
+					{"O_Truck_02_transport_F",{14669.4,16747.6,0}},
+					{"O_Truck_02_covered_F",{14677.9,16739.1,0}},
+					{"O_Truck_02_Ammo_F",{14686.4,16730.6,0}},
+					{"O_Truck_02_fuel_F",{14694.8,16722.1,0}},
+					{"O_Truck_02_medical_F",{14703.3,16713.7,0}},
+					{"O_Truck_02_box_F",{14711.8,16705.2,0}},
+					{"O_T_Truck_02_transport_F",{14720.3,16696.7,0}}
+				};
+			};
+			class CCOM_UGV {
+				displayName = "UGV";
+				vehicleData[] = {
+					{"O_UGV_01_F",{14658.1,16736.3,0}},
+					{"O_UGV_01_rcws_F",{14666.6,16727.8,0}},
+					{"O_T_UGV_01_ghex_F",{14675,16719.3,0}}
+				};
+			};
+		};
+	};
+	class CCOM_Aerien {
+		displayName = "Véhicules aériens";
+		class CCOM_Tournante {
+			displayName = "Voilure tournante";
+			class CCOM_Attaque {
+				displayName = "Attaque";
+				vehicleData[] = {
+					{"O_Heli_Attack_02_dynamicLoadout_F",{14646.8,16725,0}}
+				};
+			};
+			class CCOM_Transport {
+				displayName = "Transport";
+				vehicleData[] = {
+					{"O_Heli_Light_02_unarmed_F",{14635.5,16713.7,0}},
+					{"O_Heli_Light_02_dynamicLoadout_F",{14646.8,16702.3,0}}
+				};
+			};
+			class CCOM_Logistique {
+				displayName = "Logistique";
+				vehicleData[] = {
+					{"O_Heli_Transport_04_F",{14624.1,16702.3,0}},
+					{"O_Heli_Transport_04_bench_F",{14635.5,16691,0}},
+					{"O_Heli_Transport_04_ammo_F",{14646.8,16679.7,0}},
+					{"O_Heli_Transport_04_fuel_F",{14658.1,16668.4,0}},
+					{"O_Heli_Transport_04_medevac_F",{14669.4,16657.1,0}},
+					{"O_Heli_Transport_04_repair_F",{14680.7,16645.8,0}},
+					{"O_Heli_Transport_04_box_F",{14692,16634.5,0}}
+				};
+			};
+		};
+		class CCOM_Fixe {
+			displayName = "Voilure fixe";
+			class CCOM_CAS {
+				displayName = "CAS";
+				vehicleData[] = {
+					{"O_Plane_CAS_02_dynamicLoadout_F",{14612.8,16691,0}}
+				};
+			};
+			class CCOM_Chasse {
+				displayName = "Chasse";
+				vehicleData[] = {
+					{"O_Plane_Fighter_02_F",{14601,16679,0}}
+				};
+			};
+			class CCOM_UAV {
+				displayName = "UAV";
+				vehicleData[] = {
+					{"O_T_UAV_04_CAS_F",{14589.7,16667.7,0}},
+					{"O_UAV_02_dynamicLoadout_F",{14601,16656.4,0}}
+				};				
+			};
+		};
+		class CCOM_Hybride {
+			displayName = "Voilure hybride";
+			class CCOM_Vtol {
+				displayName = "VTOL";
+				vehicleData[] = {
+					{"O_T_VTOL_02_vehicle_dynamicLoadout_F",{14578.4,16656.4,0}}
+				};
+			};
+		};
+	};
 };
